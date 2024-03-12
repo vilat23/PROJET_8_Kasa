@@ -1,9 +1,14 @@
 
 const Header = () => {
     return (
-      <div>
-        <p>Hello, je suis le header</p>
-  
+      <div className="header">
+        <img src="" alt=""/>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>A Propos</li>
+            </ul>
+        </nav>
       </div>
     );
   };

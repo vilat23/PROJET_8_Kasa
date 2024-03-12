@@ -2,7 +2,7 @@
 const App = () => {
   return (
     <div>
-      <p>Hello ça fonctionne</p>
+      <p>Hello je suis le composant App</p>
 
     </div>
   );
