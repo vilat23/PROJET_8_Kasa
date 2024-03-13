@@ -1,12 +1,14 @@
 import propTypes from "prop-types";
+import { Link } from "react-router-dom";
+
 
 const Card = ({ data }) => {
     return (
         data.map((card) => (
-            <div className="cards-thumbs" key={card.id}>
+            <Link to={`/details/${card.id}`} className="cards-thumbs" key={card.id}>
                 <img src={card.cover} alt={card.title} />
                 <h3>{card.title}</h3>
-            </div>
+            </Link>
         ))
 
     );
