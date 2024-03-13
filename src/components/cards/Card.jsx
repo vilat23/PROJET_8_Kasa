@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 
-const Card = ({ data }) => {
+function Card({ data }) {
     return (
         data.map((card) => (
             <Link to={`/details/${card.id}`} className="cards-thumbs" key={card.id}>
@@ -12,7 +12,7 @@ const Card = ({ data }) => {
         ))
 
     );
-};
+}
 
 Card.propTypes = {
     data: propTypes.array.isRequired

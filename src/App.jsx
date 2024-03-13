@@ -5,18 +5,18 @@ import Accueil from './pages/Accueil.jsx'
 import Apropos from './pages/Apropos.jsx'
 import Details from './components/details/Details.jsx'
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Accueil />} />
-      <Route path="/apropos" element={<Apropos />} />
-      <Route path="details/:id" element={<Details />} />
-    </Routes>
-    <Footer />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/apropos" element={<Apropos />} />
+        <Route path="details/:id" element={<Details />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
-};
+}
 
 export default App;

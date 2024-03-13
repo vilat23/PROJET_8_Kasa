@@ -2,7 +2,7 @@ import Hero from '/src/components/hero/Hero.jsx';
 import Card from '/src/components/cards/Card.jsx';
 import data from '../data/data.json'; 
 
-const Accueil = () => {
+function Accueil() {
     return (
       <div className="homePage">
         <div>
@@ -12,7 +12,7 @@ const Accueil = () => {
         <Card data={data} />
         </div>
       </div>
-    );
-  };
+    )
+  }
   
   export default Accueil;

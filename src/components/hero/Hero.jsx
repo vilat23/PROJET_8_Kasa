@@ -1,6 +1,6 @@
 import bannerImg from "/src/assets/images/bannerImg.jpg";
 
-const Hero = () => {
+function Hero() {
     return (
       <div className="hero">
         <img src= {bannerImg} alt="banner kasa" className="banner-img" />
