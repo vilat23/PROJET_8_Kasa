@@ -6,10 +6,13 @@ function Details() {
     // Avec useParams on recupere l'id dans l'url de la route definie pour le composant Details.jsx
     const { id } = useParams();
     const currentCard = data.find((card) => card.id === id);
+    
     return (
         <div className="details">
             <p>Fenetre de details de la card cliquée, avec ID : {id}</p>
+            <div>
             <img src="../../src/assets/images/ImgCarrousel.jpg" alt=""/>
+            </div>
             <p>CAROUSEL A INTEGRER</p>
             <h1>TITRE : {currentCard.title}</h1>
             <div>

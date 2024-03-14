@@ -10,6 +10,7 @@ function Card({data}) {
             
             <Link to={`/details/${card.id}`} className="cards-thumbs" key={card.id}>
                 <img src={card.cover} alt={card.title} />
+                <div className="overlay"></div>
                 <h3>{card.title}</h3>
             </Link>
         ))
