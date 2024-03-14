@@ -5,11 +5,10 @@ import data from '../data/data.json';
 function Accueil() {
     return (
       <div className="homePage">
-        <div>
         <Hero />
-        </div>
         <div className='cards'>
-        <Card data={data} />
+        {/* On ajoute une prop data au composant Card pour l'utiliser dans Card.jsx */}
+        <Card data={data} />   
         </div>
       </div>
     )
