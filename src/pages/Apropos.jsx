@@ -1,7 +1,7 @@
 
 function Apropos() {
   return (
-    <div>
+    <div className="apropos">
       <h1>Hello je suis la page A propos</h1>
 
     </div>
