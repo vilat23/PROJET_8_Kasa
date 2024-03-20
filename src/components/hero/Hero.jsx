@@ -1,11 +1,18 @@
-import bannerImg from "/src/assets/images/bannerImg.jpg";
 
-function Hero() {
-    return (
-      <div className="hero">
-        <img src= {bannerImg} alt="banner kasa" className="banner-img" />
-      </div>
-    );
-  }
+import PropTypes from 'prop-types';
   
+function Hero({ title, src, alt }) {
+  return (
+    <div className="hero">
+      <h1>{title}</h1>
+      <img src={src} alt={alt} />
+    </div>
+  );
+}
+Hero.propTypes = {
+  title: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+};
+
   export default Hero;

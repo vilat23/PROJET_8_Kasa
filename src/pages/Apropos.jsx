@@ -1,9 +1,13 @@
 import Collapse from '../components/collapse/Collapse.jsx';
-
+import Hero from '/src/components/hero/Hero.jsx';
+import aproposImg from "/src/assets/images/aproposBanner.jpg";
 function Apropos() {
   return (
     <div className="apropos">
-      <img src="../../src/assets/images/aproposBanner.jpg" alt="" className="apropos__img" />
+      <Hero
+        src={aproposImg}
+        alt="Image d'un paysage"
+      />
 
       <div className='apropos__collapses'>
             <Collapse 
@@ -29,7 +33,6 @@ function Apropos() {
             également des ateliers sur la sécurité domestique pour nos hôtes."
             />
         </div>
-
     </div>
   );
 }
