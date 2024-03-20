@@ -6,6 +6,6 @@ function Hero() {
         <img src= {bannerImg} alt="banner kasa" className="banner-img" />
       </div>
     );
-  };
+  }
   
   export default Hero;

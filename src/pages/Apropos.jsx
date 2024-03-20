@@ -1,4 +1,5 @@
 import Collapse from '../components/collapse/Collapse.jsx';
+
 function Apropos() {
   return (
     <div className="apropos">
