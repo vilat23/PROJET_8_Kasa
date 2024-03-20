@@ -1,9 +1,17 @@
 .hero {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
+    position: relative;
 
     h1 {
         position: absolute;
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow: rgb(7, 7, 7) 2px 4px 8px;
     }
 }
