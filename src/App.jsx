@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/header/Header.jsx'
 import Footer from './components/footer/Footer.jsx'
 import Accueil from './pages/Accueil.jsx'
-import Apropos from './pages/Apropos.jsx'
+import Apropos from './pages/apropos/Apropos.jsx'
 import Details from './components/details/Details.jsx'
 import Error from './pages/error/Error.jsx'
 

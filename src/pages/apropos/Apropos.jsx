@@ -1,4 +1,4 @@
-import Collapse from '../components/collapse/Collapse.jsx';
+import Collapse from '../../components/collapse/Collapse.jsx';
 import Hero from '/src/components/hero/Hero.jsx';
 import aproposImg from "/src/assets/images/aproposBanner.jpg";
 function Apropos() {
