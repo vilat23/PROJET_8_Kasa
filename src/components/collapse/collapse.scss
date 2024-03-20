@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     background-color: #F6F6F6;
+    position: relative;
 
     .collapse__title {
         font-size: 18px;
@@ -24,19 +25,21 @@
     }
 
     .collapse-content {
+        display: flex;
         border-radius: 5px;
-        width: 100%;
-        background-color: #F6F6F673;
-        margin-top: -18px;
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        margin: -16px;
         z-index: 1;
 
         p {
             font-size: 18px;
             font-weight: 300;
+
         }
 
         ul {
-            padding: 0;
+            padding-top: 0;
 
         }
 
@@ -44,6 +47,7 @@
             font-size: 18px;
             font-weight: 300;
             list-style-type: none;
+            margin-top: 5px;
         }
     }
 
