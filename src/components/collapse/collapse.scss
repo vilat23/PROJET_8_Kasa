@@ -7,7 +7,7 @@
 }
 
 .collapse__title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: white;
     display: flex;
@@ -15,7 +15,7 @@
     background-color: #FF6060;
     padding: 10px 20px 10px 10px;
     border-radius: 5px;
-    width: 94%;
+    width: 100%;
 
     button {
         border: none;
@@ -24,12 +24,16 @@
 }
 
 .collapse-content {
-    width: 94%;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
 
 
     p {
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 300;
+        background-color: cadetblue;
     }
 
     ul {
@@ -38,7 +42,7 @@
     }
 
     li {
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 300;
         list-style-type: none;
     }
