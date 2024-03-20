@@ -1,5 +1,45 @@
 .collapse {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 
+}
+
+.collapse__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    width: 94%;
+
+    button {
+        border: none;
+        background: none;
+    }
+}
+
+.collapse-content {
+    width: 94%;
+
+
+    p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 13px;
+    }
+
+    li {
+        font-size: 13px;
+        font-weight: 300;
+        list-style-type: none;
+    }
 }

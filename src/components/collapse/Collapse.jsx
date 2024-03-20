@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
+import topArrow from '../../assets/images/topArrow.png';
+import downArrow from '../../assets/images/downArrow.png';
+
 function Collapse({ name, description, data }) {
     const [close, setClose] = useState(true)
     
@@ -9,8 +12,8 @@ function Collapse({ name, description, data }) {
     }
 
     return <div className="collapse">
-        <div className="collapse-title">{name}
-            <button onClick={handleClick}> {close ? <img src="" alt="fleche haut" className='up' /> : <img src="{down}" alt="fleche bas" className='down' />} </button>
+        <div className="collapse__title">{name}
+            <button onClick={handleClick}> {close ? <img src={topArrow} alt="fleche haut" className='topArrow' /> : <img src={downArrow} alt="fleche bas" className='downArrow' />} </button>
         </div>
         <div className="collapse-content">
             {data ?
