@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom";
 import data from '../../data/data.json';
 import Collapse from '../collapse/Collapse.jsx';
+import Rating from "../rating/Rating.jsx";
 
 function Details() {
     // Avec useParams on recupere l'id dans l'url de la route definie pour le composant Details.jsx
     const { id } = useParams();
     const currentCard = data.find((card) => card.id === id);
+    const rating = currentCard.rating
 
     return (
         <div className="details">
@@ -38,11 +40,7 @@ function Details() {
                     </div>
 
                     <div className="apartment__stars">
-                        <span>*</span>
-                        <span>*</span>
-                        <span>*</span>
-                        <span>*</span>
-                        <span>*</span>
+                    <Rating rating={rating} />
                     </div>
                 </div>
 
