@@ -9,6 +9,9 @@ function Details() {
     const currentCard = data.find((card) => card.id === id);
     const rating = currentCard.rating
 
+
+    const name = currentCard.host.name.split(' ');
+
     return (
         <div className="details">
             <div className="carousel">
@@ -35,12 +38,16 @@ function Details() {
                 <div className="apartment__host">
 
                     <div className="apartment__host__infos">
-                        <h3>{currentCard.host.name}</h3>
+                        {/* <h3>{currentCard.host.name}</h3> */}
+                        <div className="host__name">
+                            <span className="host-lastname">{name[0]}</span>
+                            <span className="host-firstname">{name[1]}</span>
+                        </div>
                         <div className="apartment__badge"><img src={currentCard.host.picture} alt="" /></div>
                     </div>
 
                     <div className="apartment__stars">
-                    <Rating rating={rating} />
+                        <Rating rating={rating} />
                     </div>
                 </div>
 
