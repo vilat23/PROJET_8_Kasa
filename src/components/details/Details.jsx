@@ -21,9 +21,11 @@ function Details() {
                         <h2>{currentCard.location}</h2>
                     </div>
                     <div className="apartment__tags">
-                        <p>Tag1</p>
-                        <p>Tag2</p>
-                        <p>Tag3</p>
+                        {currentCard.tags.map((tag, index) => {
+                            return (
+                                <button className="apartment__tag" key={index}>{tag}</button>
+                            )
+                        })}
                     </div>
                 </div>
 
