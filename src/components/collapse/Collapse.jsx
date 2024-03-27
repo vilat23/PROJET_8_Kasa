@@ -12,6 +12,8 @@ function Collapse({ name, description, data }) {
         setClose((close) => !close)
     }
 
+    const colContent = document.querySelector('.collapse-content');
+
     return <div className="collapse">
 
         <div className="collapse__title">{name}
