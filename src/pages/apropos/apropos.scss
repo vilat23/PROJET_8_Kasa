@@ -1,5 +1,4 @@
 .apropos {
-
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -19,7 +18,6 @@
     margin-top: 30px;
 
     .collapse {
-
         margin-bottom: 10px;
 
         .collapse__title {
@@ -32,7 +30,6 @@
             border-radius: 10px;
             padding: 10px 20px 10px 10px;
 
-            // z-index: 2;
             button {
                 border: none;
                 background: none;
@@ -40,7 +37,6 @@
         }
 
         .collapse-content {
-
             background-color: #F6F6F6;
             color: black;
             font-size: 14px;
@@ -49,10 +45,7 @@
             padding: 0 15px;
 
             p {
-
                 margin-top: 0px;
-
-
             }
 
         }
